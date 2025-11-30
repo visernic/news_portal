@@ -1,0 +1,37 @@
+/* * Main Stylesheet
+ * Project: Visernic News Portal
+ */
+
+:root {
+    --primary-color: #1e40af; /* Blue 800 */
+    --accent-color: #3b82f6;  /* Blue 500 */
+    --text-dark: #1f2937;
+    --text-light: #f3f4f6;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom Animation for News Cards */
+.news-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+    box_shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Typography Overrides */
+body {
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Utility: Fade out class for flash messages */
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
